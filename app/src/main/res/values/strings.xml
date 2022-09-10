@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Room_app1</string>
+    <string name="room_database">Library Database</string>
 </resources>

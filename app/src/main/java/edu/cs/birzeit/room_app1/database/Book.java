@@ -1,5 +1,6 @@
 package edu.cs.birzeit.room_app1.database;
 
+import androidx.annotation.NonNull;
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.Ignore;
@@ -34,5 +35,11 @@ public class Book {
 
     public String getCategory() {
         return category;
+    }
+
+    @NonNull
+    @Override
+    public String toString() {
+        return title;
     }
 }
