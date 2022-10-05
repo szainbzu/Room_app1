@@ -13,8 +13,8 @@ public interface BookDao {
     @Query("SELECT * FROM book")
     List<Book> getAll();
 
-    @Query("SELECT * FROM book WHERE bookId IN (:bookIds)")
-    List<Book> loadAllByIds(int[] bookIds);
+    //@Query("SELECT * FROM book WHERE bookId IN (:bookIds)")
+   // List<Book> loadAllByIds(int[] bookIds);
 
     @Query("SELECT * FROM book WHERE title LIKE :title")
     Book findByName(String title);
